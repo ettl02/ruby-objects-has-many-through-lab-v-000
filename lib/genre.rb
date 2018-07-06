@@ -9,7 +9,11 @@ class Genre
     Song.all { |song| song.genre == self }
   end
 
-  def artists 
-    songs.map { |song|}
+  def artists
+    songs.map { |song| song.artist}
+  end 
+
+  def add_song(song)
+    self.songs << song
 
 end
