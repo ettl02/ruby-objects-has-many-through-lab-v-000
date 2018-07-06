@@ -6,6 +6,7 @@ class Doctor
 
   def initialize(name)
     @name = name
+    @name << self 
   end
 
 end
