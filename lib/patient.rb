@@ -10,10 +10,10 @@ class Patient
   end
 
   def appointments
-    Appointment.all.select { |appointment| appointments.patient }
+    Appointment.all.select { |appointment| appointment.patient }
   end
 
   def doctors
-    appointments.map { |appointment| appointments.doctor }
+    appointments.map { |appointment| appointment.doctor }
   end
 end
