@@ -3,4 +3,8 @@ class Genre
 
   def initialize(name)
     @name = name
-end 
+  end 
+
+  def songs
+    Song.all {}
+end
